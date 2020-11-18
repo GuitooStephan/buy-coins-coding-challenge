@@ -1,2 +1,2 @@
 [[plugins]]
-  package = "@helloample/netlify-plugin-replace"
+    package = "netlify-plugin-inline-functions-env"
