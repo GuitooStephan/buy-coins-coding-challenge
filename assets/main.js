@@ -62,22 +62,7 @@ function changeImageSrc( id, source ) {
     img.src = source;
 }
 
-function fetchEnvVariables(){
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            var data = JSON.parse( this.responseText );
-            console.log( '----->>', data );
-        }
-    };
-    xhttp.open('GET', '/.netlify/functions/variables', true);
-    xhttp.send();
-}
-
-function requestGithubData() {
-    toggleError( false );
-    toggleLoader( true );
-
+function requestGithubData( token ) {
     var body = JSON.stringify({
         query: `
             query {
@@ -203,9 +188,24 @@ function requestGithubData() {
     };
 
     xhttp.open('POST', 'https://api.github.com/graphql', true);
-    xhttp.setRequestHeader( 'Authorization', `bearer 3289238239389230445893432332` );
+    xhttp.setRequestHeader( 'Authorization', `bearer ${token}` );
     xhttp.setRequestHeader( 'Content-type', 'application/json' );
     xhttp.send( body );
+}
+
+function fetchEnvVariables(){
+    toggleError( false );
+    toggleLoader( true );
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            var data = JSON.parse( this.responseText );
+            requestGithubData( data.access_token );
+        }
+    };
+    xhttp.open('GET', '/.netlify/functions/variables', true);
+    xhttp.send();
 }
 
 window.addEventListener('scroll', function(e) {
@@ -219,4 +219,3 @@ window.addEventListener('scroll', function(e) {
 });
 
 fetchEnvVariables();
-requestGithubData();
