@@ -191,7 +191,7 @@ function requestGithubData() {
     };
 
     xhttp.open('POST', 'https://api.github.com/graphql', true);
-    xhttp.setRequestHeader( 'Authorization', 'bearer b6970333bf804cbb3451b4173d0b233de4aad9c9' );
+    xhttp.setRequestHeader( 'Authorization', `bearer ${process.env.ACCESS_TOKEN}` );
     xhttp.setRequestHeader( 'Content-type', 'application/json' );
     xhttp.send( body );
 }
