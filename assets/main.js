@@ -100,7 +100,7 @@ function requestGithubData() {
     });
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
-        if( this.readyState == 4 && this.status == 500 ) {
+        if( this.readyState == 4 && ( this.status == 500 || this.status == 401 ) ) {
             toggleError( true );
         }
 
@@ -191,7 +191,7 @@ function requestGithubData() {
     };
 
     xhttp.open('POST', 'https://api.github.com/graphql', true);
-    xhttp.setRequestHeader( 'Authorization', 'bearer c0fa876eec0be5c491d1888ccf9b32ea0e6d2824' );
+    xhttp.setRequestHeader( 'Authorization', 'bearer 132fa1ca0dae6744591c1acffe96287566741d12' );
     xhttp.setRequestHeader( 'Content-type', 'application/json' );
     xhttp.send( body );
 }
