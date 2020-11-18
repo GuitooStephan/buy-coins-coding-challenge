@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-32x32.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repositories</title>
+    <link rel="stylesheet" href="./assets/main.css">
+</head>
+<body>
+    <!-- Nav bar -->
+    <div class="nav-bar justify-content-between justify-content-lg-start">
+        <a href="javascript:void(0)" onclick="toggleMobileMenu(this)" class="nav-icon-link d-block d-lg-none">
+            <svg height="24" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path></svg>
+        </a>
+        <img class="" src="./assets/images/GitHub-Mark-Light-32px.png" alt="logo">
+        <div id="mobile-menu" class="nav-link-row w-lg-100 d-none d-lg-flex">
+            <label class="search-container position-relative">
+                <input placeholder="Search or jump to..." type="text">
+                <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="" class="mr-2 slash">
+                <div class="suggestion-box">
+                    <ul>
+                        <li class="suggestion">
+                            <a href="javascript:void(0)">
+                                <div class="icon"><svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo" title="Repository" aria-label="Repository" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg></div>
+                                guitooStephan/apex-repro-fix-django
+                                <p class="jump-to">
+                                    Jump to &crarr;
+                                </p>
+                            </a>
+                        </li>
+                        <li class="suggestion">
+                            <a href="javascript:void(0)">
+                                <div class="icon"><svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo" title="Repository" aria-label="Repository" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg></div>
+                                guitooStephan/apex-node-js
+                                <p class="jump-to">
+                                    Jump to &crarr;
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </label>
+            <div class="nav-link-group">
+                <a href="javascript:void(0)" class="nav-link d-block d-lg-none mt-3">Dashboard</a>
+                <a href="javascript:void(0)" class="nav-link">Pull requests</a>
+                <a href="javascript:void(0)" class="nav-link">Issues</a>
+                <a href="javascript:void(0)" class="nav-link">Codespaces</a>
+                <a href="javascript:void(0)" class="nav-link">Marketplace</a>
+                <a href="javascript:void(0)" class="nav-link">Explore</a>
+                <a href="javascript:void(0)" class="nav-link d-block d-lg-none">
+                    <img id="mobile-navbar-profile-picture" class="profile-picture" src="https://avatars0.githubusercontent.com/u/22896222?s=460&v=4" alt="profile picture">
+                    GuitooStephan
+                </a>
+                <a href="javascript:void(0)" class="nav-link d-block d-lg-none">
+                    <svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M2 2.75C2 1.784 2.784 1 3.75 1h2.5a.75.75 0 010 1.5h-2.5a.25.25 0 00-.25.25v10.5c0 .138.112.25.25.25h2.5a.75.75 0 010 1.5h-2.5A1.75 1.75 0 012 13.25V2.75zm10.44 4.5H6.75a.75.75 0 000 1.5h5.69l-1.97 1.97a.75.75 0 101.06 1.06l3.25-3.25a.75.75 0 000-1.06l-3.25-3.25a.75.75 0 10-1.06 1.06l1.97 1.97z"></path></svg>
+                    Sign out
+                </a>
+            </div>
+        </div>
+        <a href="javascript:void(0)" class="nav-icon-link">
+            <svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 16a2 2 0 001.985-1.75c.017-.137-.097-.25-.235-.25h-3.5c-.138 0-.252.113-.235.25A2 2 0 008 16z"></path><path fill-rule="evenodd" d="M8 1.5A3.5 3.5 0 004.5 5v2.947c0 .346-.102.683-.294.97l-1.703 2.556a.018.018 0 00-.003.01l.001.006c0 .002.002.004.004.006a.017.017 0 00.006.004l.007.001h10.964l.007-.001a.016.016 0 00.006-.004.016.016 0 00.004-.006l.001-.007a.017.017 0 00-.003-.01l-1.703-2.554a1.75 1.75 0 01-.294-.97V5A3.5 3.5 0 008 1.5zM3 5a5 5 0 0110 0v2.947c0 .05.015.098.042.139l1.703 2.555A1.518 1.518 0 0113.482 13H2.518a1.518 1.518 0 01-1.263-2.36l1.703-2.554A.25.25 0 003 7.947V5z"></path></svg>
+        </a>
+        <details class="nav-icon-link position-relative d-none d-lg-flex">
+            <summary>
+                <svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 2a.75.75 0 01.75.75v4.5h4.5a.75.75 0 010 1.5h-4.5v4.5a.75.75 0 01-1.5 0v-4.5h-4.5a.75.75 0 010-1.5h4.5v-4.5A.75.75 0 018 2z"></path></svg>
+                <span class="dropdown-caret"></span>
+            </summary>
+            <div class="details-menu position-absolute">
+                <a href="javascript:void(0)" class="details-menu-link">New repository</a>
+                <a href="javascript:void(0)" class="details-menu-link">Import repository</a>
+                <a href="javascript:void(0)" class="details-menu-link">New gist</a>
+            </div>
+        </details>
+        <details class="nav-icon-link position-relative d-none d-lg-flex">
+            <summary>
+                <img id="desktop-navbar-profile-picture" class="profile-picture" src="https://avatars0.githubusercontent.com/u/22896222?s=460&v=4" alt="profile picture">
+                <span class="dropdown-caret"></span>
+            </summary>
+            <div class="details-menu position-absolute">
+                <p class="details-menu-text mb-0">Signed in as<strong class="d-block">GuitooStephan</strong></p>
+            </div>
+        </details>
+    </div>
+
+    <div>
+        <div id="error-container" class="error-container">
+            <div class="repo-empty-state py-5 mt-4">
+                <h2 class="mb-1 text-center text-danger">Something went wrong. Kindly try again !</h2>
+            </div>
+        </div>
+        <div id="loader-container" class="loader-container">
+            <div class="loader">
+                <div class="bars-container">
+                    <div class="bars">
+                        <div></div><div></div><div></div><div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main id="main">
+            <div class="mt-4 desktop-tabs position-sticky d-none d-md-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="left"></div>
+                        <div class="right d-flex">
+                            <a href="javascript:void(0)" class="tab-link">
+                                <svg height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 1.75A.75.75 0 01.75 1h4.253c1.227 0 2.317.59 3 1.501A3.744 3.744 0 0111.006 1h4.245a.75.75 0 01.75.75v10.5a.75.75 0 01-.75.75h-4.507a2.25 2.25 0 00-1.591.659l-.622.621a.75.75 0 01-1.06 0l-.622-.621A2.25 2.25 0 005.258 13H.75a.75.75 0 01-.75-.75V1.75zm8.755 3a2.25 2.25 0 012.25-2.25H14.5v9h-3.757c-.71 0-1.4.201-1.992.572l.004-7.322zm-1.504 7.324l.004-5.073-.002-2.253A2.25 2.25 0 005.003 2.5H1.5v9h3.757a3.75 3.75 0 011.994.574z"></path></svg>
+                                Overview
+                            </a>
+                            <a href="javascript:void(0)" class="tab-link selected">
+                                <svg height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
+                                Repositories
+                                <span id="desktop-repo-number-badge" class="repo-number-badge"></span>
+                            </a>
+                            <a href="javascript:void(0)" class="tab-link">
+                                <svg height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.75 0A1.75 1.75 0 000 1.75v12.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0016 14.25V1.75A1.75 1.75 0 0014.25 0H1.75zM1.5 1.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v12.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25V1.75zM11.75 3a.75.75 0 00-.75.75v7.5a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75zm-8.25.75a.75.75 0 011.5 0v5.5a.75.75 0 01-1.5 0v-5.5zM8 3a.75.75 0 00-.75.75v3.5a.75.75 0 001.5 0v-3.5A.75.75 0 008 3z"></path></svg>
+                                Projects
+                            </a>
+                            <a href="javascript:void(0)" class="tab-link">
+                                <svg height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.878.392a1.75 1.75 0 00-1.756 0l-5.25 3.045A1.75 1.75 0 001 4.951v6.098c0 .624.332 1.2.872 1.514l5.25 3.045a1.75 1.75 0 001.756 0l5.25-3.045c.54-.313.872-.89.872-1.514V4.951c0-.624-.332-1.2-.872-1.514L8.878.392zM7.875 1.69a.25.25 0 01.25 0l4.63 2.685L8 7.133 3.245 4.375l4.63-2.685zM2.5 5.677v5.372c0 .09.047.171.125.216l4.625 2.683V8.432L2.5 5.677zm6.25 8.271l4.625-2.683a.25.25 0 00.125-.216V5.677L8.75 8.432v5.516z"></path></svg>
+                                Packages
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="left">
+                            <div class="mt-md-n5 mt-3 mt-md-0">
+                                <div id="user-profile-sticky-bar" class="user-profile-sticky-bar d-none d-md-block">
+                                    <div class="d-table">
+                                        <span class="profile-picture-container">
+                                            <img id="sticky-bar-profile-picture" height="32" width="32" class="avatar" src="https://avatars0.githubusercontent.com/u/22896222?s=460&v=4" alt="avatar">
+                                        </span>
+                                        <span class="info-container">
+                                            <strong id="sticky-bar-username"></strong>
+                                            <div>
+                                                <button>Follow</button>
+                                            </div>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center d-md-block mb-4 mb-md-0 mt-4">
+                                    <div class="position-relative d-inline-box main-profile-picture-container">
+                                        <img id="main-avatar" class="avatar" src="https://avatars0.githubusercontent.com/u/22896222?s=460&v=4" alt="avatar">
+                                        <div id="desktop-status-container" class="d-none d-md-flex status-circle-container"></div>
+                                    </div>
+                                    <div id="information" class="py-3 information">
+                                        <h2 id="full-name-div" class="font-weight-bold full-name"></h2>
+                                        <p id="username-div" class="mb-0 text-muted font-size-20 user-name"></p>
+                                    </div>
+                                </div>
+                                <div id="mobile-status-container" class="d-flex d-md-none status-circle-container-open"></div>
+                                <div class="bio">
+                                    <p id="bio-div" class="mb-0"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="mobile-tabs position-sticky d-flex d-md-none">
+                                <a href="javascript:void(0)" class="tab-link">
+                                    <svg height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 1.75A.75.75 0 01.75 1h4.253c1.227 0 2.317.59 3 1.501A3.744 3.744 0 0111.006 1h4.245a.75.75 0 01.75.75v10.5a.75.75 0 01-.75.75h-4.507a2.25 2.25 0 00-1.591.659l-.622.621a.75.75 0 01-1.06 0l-.622-.621A2.25 2.25 0 005.258 13H.75a.75.75 0 01-.75-.75V1.75zm8.755 3a2.25 2.25 0 012.25-2.25H14.5v9h-3.757c-.71 0-1.4.201-1.992.572l.004-7.322zm-1.504 7.324l.004-5.073-.002-2.253A2.25 2.25 0 005.003 2.5H1.5v9h3.757a3.75 3.75 0 011.994.574z"></path></svg>
+                                    Overview
+                                </a>
+                                <a href="javascript:void(0)" class="tab-link selected">
+                                    <svg height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>
+                                    Repositories
+                                    <span id="mobile-repo-number-badge" class="repo-number-badge"></span>
+                                </a>
+                                <a href="javascript:void(0)" class="tab-link">
+                                    <svg height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.75 0A1.75 1.75 0 000 1.75v12.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0016 14.25V1.75A1.75 1.75 0 0014.25 0H1.75zM1.5 1.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v12.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25V1.75zM11.75 3a.75.75 0 00-.75.75v7.5a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75zm-8.25.75a.75.75 0 011.5 0v5.5a.75.75 0 01-1.5 0v-5.5zM8 3a.75.75 0 00-.75.75v3.5a.75.75 0 001.5 0v-3.5A.75.75 0 008 3z"></path></svg>
+                                    Projects
+                                </a>
+                                <a href="javascript:void(0)" class="tab-link">
+                                    <svg height="16" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.878.392a1.75 1.75 0 00-1.756 0l-5.25 3.045A1.75 1.75 0 001 4.951v6.098c0 .624.332 1.2.872 1.514l5.25 3.045a1.75 1.75 0 001.756 0l5.25-3.045c.54-.313.872-.89.872-1.514V4.951c0-.624-.332-1.2-.872-1.514L8.878.392zM7.875 1.69a.25.25 0 01.25 0l4.63 2.685L8 7.133 3.245 4.375l4.63-2.685zM2.5 5.677v5.372c0 .09.047.171.125.216l4.625 2.683V8.432L2.5 5.677zm6.25 8.271l4.625-2.683a.25.25 0 00.125-.216V5.677L8.75 8.432v5.516z"></path></svg>
+                                    Packages
+                                </a>
+                            </div>
+                            <div class="position-relative mb-5">
+                                <div class="search-repo">
+                                    <input type="text" placeholder="Find a repository">
+                                </div>
+                                <div class="results-summary-container">
+                                    <p class="mb-0">
+                                        <span id="repo-count-container" class="font-weight-bold"></span> 
+                                        results for 
+                                        <span class="font-weight-bold">public</span> 
+                                        repositories
+                                    </p>
+                                </div>
+                                <div id="repo-list" class="repo-list"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+    <script src="./assets/main.js"> </script>
+</body>
+</html>
