@@ -63,8 +63,8 @@ function changeImageSrc( id, source ) {
 }
 
 function requestGithubData() {
-    toggleLoader( true );
     toggleError( false );
+    toggleLoader( true );
 
     var body = JSON.stringify({
         query: `
@@ -191,7 +191,7 @@ function requestGithubData() {
     };
 
     xhttp.open('POST', 'https://api.github.com/graphql', true);
-    xhttp.setRequestHeader( 'Authorization', 'bearer 132fa1ca0dae6744591c1acffe96287566741d12' );
+    xhttp.setRequestHeader( 'Authorization', 'bearer 880254fa53c56fa1acc0c5c0ba9d34036a19e6b5' );
     xhttp.setRequestHeader( 'Content-type', 'application/json' );
     xhttp.send( body );
 }
